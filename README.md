@@ -34,3 +34,5 @@ streamlit run app.py
 ```
 
 Make sure to follow all the above steps.
+
+I have added DEMO of AWS Lambda function and SageMaker as well.

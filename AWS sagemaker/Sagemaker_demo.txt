@@ -1,0 +1,7 @@
+#SageMaker use case or demo
+1. AWS SageMaker
+2. Domains from left
+3. create (Quick setup)
+4. open studio
+5. build->hupyterlab->create project
+6. rest of instructions or demo given in falcon8b ipynb notebook

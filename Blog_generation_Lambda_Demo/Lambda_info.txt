@@ -1,0 +1,22 @@
+#lambda function use case
+1. lambda
+2. create function
+3. if you want you can write down the code or else you can just copy & paste it.
+4. to install dependencies - create folder named python and in terminal *pip install pandas, boto3 -t python/*  (add more libraries required)
+5. create a zip file of python folder
+6. create a layer in lambda function (you'll find it in left side options)
+7. Now add this layer from custom layers
+8. go to API Gateway and create a API with HTTP
+9. create a route with POST request and blog-generation name in /
+10. select that route and click on attach integration 
+11. create integration type as Lambda function and with your regions there will be available lambda's displayed selected the one you wanted
+12. create a new stage from left side option in API gateway.
+13. click on Deploy and select that stage you created and deploy
+14. create S3 bucket with same name as mentioned in code
+15. select the api url (invoke url) from stage you created from stages
+16. now go back to lambda and click on add Trigger in the lambda function, select API Gateway and select use existing API and follow prompts
+17. Now go to configuration in lambda and click on permissions in left side and click on role name and add policies as admin
+18. paste the URL generated in step 15 in POSTMAN and add /api name which is created in step 9
+19. Enter it in POST blank in POSTMAN and select body and select raw and enter the format of json selected previously. eg: {
+    "blog_topic":"Machine Learning and Generative AI"
+} from blog generation app.py (Make sure it has "" rather than '')
